@@ -1,0 +1,65 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color:	rgb(255, 250, 205) ;
+    margin-left: 10px;
+}
+h1{
+    text-align: center;
+    color: white;
+    background-color: rgb(153, 23, 23);
+    border-bottom: 10px solid red;
+    letter-spacing: 12px;
+    font-style: italic;
+}
+
+h3{
+    color: white;
+    background-color: rgb(42, 153, 42);
+    
+    padding-left: 10px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+li{
+    color: rgb(255, 0, 0);
+    font-style: italic;
+}
+a{
+    text-decoration: none;
+    color: rgb(220, 6, 220) ;
+}
+img{
+    width: 100px;
+    height: 80px;
+    padding-left: 20px;
+}
+
+.googlelogo{
+    width: 200px;
+    height: 80px;
+    border: 3px dotted grey;
+    background-color: white;
+}
+
+h4{
+    color: grey;
+}
+
+table,tr,td{
+    border: 1px solid black;
+    font-size: 11px;
+}
+td{
+    background-color: rgb(209, 208, 208);
+}
+
+textarea{
+    overflow-y: scroll;
+}
+
+button{
+    background-color: rgb(163, 157, 157);
+    border: 1px solid grey;
+    font-size: 12px;
+}

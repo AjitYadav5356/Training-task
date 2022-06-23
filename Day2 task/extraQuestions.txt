@@ -1,0 +1,41 @@
+a. What is HTML? Give basic structure of the HTML page.
+  HTML is Hyper Text Markup Language. It is markup language for web pages. Using html we can define the
+  structure of webpages.
+  <html>
+     <head>
+
+ 	<title>  </title>
+
+     </head>
+     <body>
+
+
+     </body>
+  </html>
+
+b.  Difference between inline and block level element.
+   Block level occupy full width irrespecting of thier size and every block level element will start from new line.
+   Inline element will occupy only required width and allow other inline element in the same line.
+
+
+CSS
+
+a.Explain the different ways in which CSS can be applied to HTML, what is the preferred way and why.
+  We can apply CSS to HTML in three ways.
+  1.Inline CSS
+	We use this we want to apply rules to any specific element and when we want to apply only one rule to that element.
+ 2.Internal CSS
+     In this we define CSS in head section of HTML.we use this method when we want to apply less CSS or when we want to apply
+     these CSS to only that page. As we cann't reuse this CSS.
+3. External CSS
+    In this method we create seperate file for css and link this file to HTML using link tag in head of HTML file. We use this
+    method when size of css property is very large or we can use same css prrperty to diffrenent pages.
+
+b.What are different CSS selectors, with example explain Element, Class and Id selectors.
+
+   element selector(p): we can directly select element apply css on that.
+   id selector(#id) : Id selector used id attribute of an html element to select a specific element
+   class selector(.) : class selector selects html elements with a specific class attribute.
+   group selector(p,h3) : we can group the selectors with same style definitions.
+   universal selector(*) : this will select all the element on the page.
+
