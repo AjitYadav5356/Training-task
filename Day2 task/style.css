@@ -1,28 +1,29 @@
 body{
     font-family: 'Roboto', sans-serif;
-    background-color:	rgb(255, 250, 205) ;
+    background-color:	#FFFFCC ;
     margin-left: 10px;
 }
 h1{
     text-align: center;
     color: white;
-    background-color: rgb(153, 23, 23);
+    background-color: rgb(153,0,0);
     border-bottom: 10px solid red;
     letter-spacing: 12px;
     font-style: italic;
+    margin-bottom: -10px;
+
 }
 
 h3{
     color: white;
-    background-color: rgb(42, 153, 42);
-    
+    background-color: #21A421;
     padding-left: 10px;
     padding-top: 2px;
     padding-bottom: 2px;
 }
 
 li{
-    color: rgb(255, 0, 0);
+    color: #D12010;
     font-style: italic;
 }
 a{
@@ -43,7 +44,7 @@ img{
 }
 
 h4{
-    color: grey;
+    color: rgb(161, 154, 154);
 }
 
 table,tr,td{
@@ -51,7 +52,7 @@ table,tr,td{
     font-size: 11px;
 }
 td{
-    background-color: rgb(209, 208, 208);
+    background-color: rgb(204, 204, 204);
 }
 
 textarea{
@@ -59,7 +60,7 @@ textarea{
 }
 
 button{
-    background-color: rgb(163, 157, 157);
+    background-color: rgb(201, 201, 188);
     border: 1px solid grey;
     font-size: 12px;
 }
