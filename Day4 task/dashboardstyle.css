@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+}
+body{
+    font-family: 'Quicksand', sans-serif;
+}
+
+.nav-bar{
+    background-image: url("./image/header\ pattern\ svg.svg"), url("./image/header\ pattern\ image.png");
+    display: flex;
+    height: 56px;
+    align-items: center;
+}
+
+.header-logo{
+    margin-left: 20px;
+    height: 33px;
+}
+
+ul{
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+    list-style: none;
+}
+
+ul > li{
+    padding-left: 15px;
+    padding-right: 20px;
+    text-align: center;
+  
+}
+
+ul > li > a{
+    text-decoration: none;
+    letter-spacing: 0px;
+    color: #3FD28B;
+    opacity: 1;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+ul > li > a:active{
+    color: #FFFFFF;
+}
