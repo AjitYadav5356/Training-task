@@ -56,15 +56,6 @@ li :hover {
   color: white;
   columns:#FFFFFF ;
 }
-.badge1,.badge2 {
-    position: absolute;
-    top: 4px;
-    left: -32;
-    padding: 0px 2px;
-    border-radius: 50%;
-    background-color: blue;
-    color: white;
-  }
 
 .nav-content {
   display: flex;
@@ -444,6 +435,7 @@ opacity: 1;
 
 .hamburger {
   display: block;
+  margin-left: -22px;
   cursor: pointer;
   padding: 10px;
 }
