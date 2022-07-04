@@ -11,25 +11,39 @@
 <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div>
-    <div class="nav-bar">
-        <img src="./image/logo used in header.svg" alt="quantum logo" class="header-logo">
-        <ul>
-            <input type="checkbox" id="checkbox_toggle">
-            <label for="checkbox_toggle" class="hamburger">&#9776;</label>
-            <div class="menu">
-            <li><a href="#" class="active-menu"> DASHBOARD</a></li>
-            <li><a href="#"> CONTENT</a></li>
-            <li><a href="#"> USERS</a></li>
-            <li><a href="#"> REPORTS</a></li>
-            <li><a href="#"> ADMIN</a></li>
+
+    <nav class="navbar">
+        <img class="logo-header" src="./image/logo used in header.svg" alt="logo-header">
+      
+        <div class="nav-content">
+            <ul class="nav-menu">
+                <li class="nav-item"><a class="nav-link" href="#"> Dashboard </a></li>
+                <li class="nav-item" ><a class="nav-link" href="#">Content</a></li>
+                <li class="nav-item" ><a class="nav-link" href="#">User</a></li>
+                <li class="nav-item" ><a class="nav-link" href="#">Reports</a></li>
+            </ul>
+            <div style="display: flex; align-items:center;">
+                <ul class="icon-in-header">
+                <li><a href="#"><img src="./image/alerts.svg" alt="alerts">
+                    <span class="badge">3</span></a></li>
+                 <li><a href="#"> <img src="./image/announcements.svg" alt="announcements">
+                    <span class="badge">3</span></a></li>
+                  <li> <img class="profile-pic" src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg" alt="profile-img"> 
+                    <span class="teacher-badge">T</span>
+                </li>
+                </ul>    
+           </div>
+
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
         </div>
-            <li><a href="#"> <img src="./image/alerts.svg" alt=""><span class="badge">2</span></a></li>
-            <li><a href="#"> <img src="./image/announcements.svg" alt=""><span class="badge">1</span></a></li>
-            <li><a href="#"><img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg" alt=""  class="profile-pic"><span class="teacher-badge">T</span></a> </li>
-            
-        </ul>
-    </div>
+
+    </nav>
+
+    <div>
     <div class="course">
         <div class="course-section">
             <img src="./image/courses.svg" alt="courses" id="course-logo">
@@ -188,5 +202,27 @@
         <p>All rights reserved.</p>
       </div>
 </div>
+
+<script>
+    const navLink = document.querySelectorAll(".nav-link");
+
+navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+function closeMenu() {
+hamburger.classList.remove("active");
+navMenu.classList.remove("active");
+}
+
+const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".nav-menu");
+
+hamburger.addEventListener("click", mobileMenu);
+
+function mobileMenu() {
+hamburger.classList.toggle("active");
+navMenu.classList.toggle("active");
+}
+</script>
+
 </body>
 </html> 
