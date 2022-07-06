@@ -32,7 +32,7 @@ body {
   padding-top: 11px;
   padding-left: 24px;
   width: 134px;
-  height: 36px;
+  height: 50px;
   opacity: 1;
 }
 
@@ -456,3 +456,12 @@ opacity: 1;
 }
   }
  
+
+@media  screen and (max-width:650px) {
+  .course-section{
+    margin-left: 13px;
+  }
+  .course-border{
+    width: 35%;
+  }
+}
