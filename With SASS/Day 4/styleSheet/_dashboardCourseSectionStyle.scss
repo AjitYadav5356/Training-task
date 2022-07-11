@@ -1,0 +1,135 @@
+$courseBackgroundColor: #ffffff 0% 0% no-repeat padding-box;
+@mixin widthHeightTop ($width, $height, $top){
+  width: $width;
+  height: $height;
+  margin-top: $top;
+}
+
+@mixin  fontSizeWeight($size, $weight){
+  font-size: $size;
+  font-weight: $weight;
+}
+
+@mixin courseDesign() {
+  .course-details {
+    display: flex;
+    margin: 24px 16px 16px 24px;
+
+    .course-info {
+      margin-left: 16px;
+      width: 100%;
+      .course-name {
+        display: flex;
+        max-width: 300px;
+        width: 100%;
+        justify-content: space-between;
+        text-align: left;
+        font-weight: bold;
+        letter-spacing: 0px;
+        color: #222222;
+        opacity: 1;
+      }
+    }
+    .course-type {
+      @include fontSizeWeight(12px,500);
+      margin-top: 7px;
+      letter-spacing: 0px;
+      color: #666666;
+      opacity: 1;
+    }
+    .mentor-dropdown-menu {
+      @include widthHeightTop(100%,27px ,16px);
+      @include fontSizeWeight(16px,500);
+      border: none;
+      max-width: 264px;
+      border-bottom: 2px solid rgba(0, 0, 0, 0.173);
+      opacity: 1;
+    }
+    .course-date {
+      display: flex;
+      font-size: 12px;
+      margin-top: 8px;
+      letter-spacing: 0px;
+      color: #666666;
+      opacity: 1;
+    }
+  }
+  .all-shortcuts {
+    @include flex(space-between);
+    border-top: 1px solid rgba(0, 0, 0, 0.173);
+    margin: 16px 24px 9px 24px;
+    .preview-icon {
+      @include widthHeightTop(22px,24px ,18px);
+    }
+
+    .manage-course-icon {
+      @include widthHeightTop(18px,20px ,16px);
+    }
+
+    .grade-submission-icon {
+      @include widthHeightTop(18px,20px ,18px);
+    }
+
+    .report-icon {
+      @include widthHeightTop(18px,24px ,16px);
+    }
+  }
+}
+
+.course-list {
+  @include breakpoints;
+  display: grid;
+  justify-content: center;
+  margin: 16px 24px 32px 24px;
+  grid-template-columns: 476px 24px 476px;
+  grid-template-rows: 246px 24px 246px;
+
+  .course1 {
+    @include courseDesign();
+    grid-column: 1 /2;
+    grid-row: 1 /2;
+    background: $courseBackgroundColor;
+    border-radius: 2px;
+    opacity: 1;
+  }
+
+  .course2 {
+    @include courseDesign();
+    grid-column: 3/4;
+    grid-row: 1 /2;
+    background: $courseBackgroundColor;
+    border-radius: 2px;
+    opacity: 1;
+  }
+
+  .course3 {
+    @include courseDesign();
+    grid-column: 1 /2;
+    grid-row: 3/4;
+    background: $courseBackgroundColor;
+    border-radius: 2px;
+    opacity: 1;
+  }
+
+  .course4 {
+    @include courseDesign();
+    grid-column: 3/4;
+    grid-row: 3/4;
+    background: $courseBackgroundColor;
+    border-radius: 2px;
+    opacity: 1;
+    
+    .expired-tag{
+      width: 52px;
+      height: 18px;
+      padding-left: 6px;
+      padding-top: 3px;
+      font-weight: 600;
+      font-size: 10px;
+      letter-spacing: 0px;
+      background: #FFE4E6;
+      color: #D80000;
+      opacity: 1;
+    }
+  }
+}

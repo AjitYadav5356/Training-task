@@ -1,0 +1,273 @@
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 32px;
+}
+.about a,
+.about p {
+  text-decoration: none;
+  font: normal normal medium 14px/18px Quicksand;
+  letter-spacing: 0px;
+  color: #1f7a54;
+  padding-left: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  opacity: 1;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 16px;
+  width: 100%;
+  height: 40px;
+  background: #e0e1e1;
+  opacity: 1;
+}
+.footer img {
+  width: 90px;
+  min-height: 24px;
+}
+.footer p {
+  text-align: left;
+  letter-spacing: 0px;
+  color: #616161;
+  font-size: 12px;
+  padding: 0 5px;
+  opacity: 1;
+}
+
+.form-section {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  margin-top: 61px;
+  max-width: 488px;
+  height: 550px;
+  border-top: 4px solid #31b9e4;
+  background-color: #ffffff;
+  padding: 20px 32px;
+}
+.form-section #back-key {
+  width: 17 px;
+  height: 26 px;
+  text-align: left;
+  opacity: 1;
+}
+.form-section h2 {
+  margin: 0 auto;
+  width: 336 px;
+  height: 30 px;
+  text-align: center;
+  letter-spacing: 0px;
+  color: #222222;
+  opacity: 1;
+  margin-top: -34px;
+  font-weight: 600;
+}
+.form-section .radio-buttons {
+  display: flex;
+  height: 24px;
+  margin-top: 34px;
+}
+.form-section .radio-buttons .checked-radio-button {
+  width: 20 px;
+  height: 24 px;
+  text-align: left;
+  letter-spacing: 0px;
+  color: #1f7a54;
+  opacity: 1;
+  margin-right: 8px;
+}
+.form-section .radio-buttons #district {
+  width: 53 px;
+  height: 20 px;
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 2px;
+  text-align: left;
+  letter-spacing: 0px;
+  color: #333333;
+  opacity: 1;
+}
+.form-section .radio-buttons .unchecked-radio-button {
+  width: 24 px;
+  height: 24 px;
+  text-align: left;
+  letter-spacing: 0px;
+  color: #1f7a54;
+  opacity: 1;
+  margin: 0 8px 0 51px;
+}
+.form-section .radio-buttons #independent {
+  margin-top: 2px;
+  font: normal normal medium 16px/20px Quicksand;
+  letter-spacing: 0px;
+  color: #333333;
+  opacity: 1;
+  font-weight: 600;
+}
+.form-section .state {
+  height: 45px;
+  margin-top: 25px;
+}
+.form-section .state .state-label {
+  height: 15px;
+  text-align: left;
+  letter-spacing: 0px;
+  color: #666666;
+  opacity: 1;
+  font-size: 12px;
+  border: none;
+}
+.form-section .state #states,
+.form-section .state #district {
+  margin-top: 5px;
+  border: none;
+  border-bottom: 1px solid #eeeeee;
+  height: 25px;
+  width: 100%;
+  text-align: left;
+  font: normal normal medium 16px/20px Quicksand;
+  letter-spacing: 0px;
+  color: #222222;
+  opacity: 1;
+  font-size: 16px;
+  font-weight: 600;
+}
+.form-section .district {
+  height: 45px;
+  margin-top: 36px;
+}
+.form-section .district .state-label {
+  height: 15px;
+  text-align: left;
+  letter-spacing: 0px;
+  color: #666666;
+  opacity: 1;
+  font-size: 12px;
+  border: none;
+}
+.form-section .district #states,
+.form-section .district #district {
+  margin-top: 5px;
+  border: none;
+  border-bottom: 1px solid #eeeeee;
+  height: 25px;
+  width: 100%;
+  text-align: left;
+  font: normal normal medium 16px/20px Quicksand;
+  letter-spacing: 0px;
+  color: #222222;
+  opacity: 1;
+  font-size: 16px;
+  font-weight: 600;
+}
+.form-section .username,
+.form-section .password {
+  width: 100%;
+  height: 25px;
+  margin-top: 56px;
+  border: none;
+  border-bottom: 1px solid #eeeeee;
+}
+.form-section .forget-username,
+.form-section .forget-password {
+  text-align: right;
+  height: 18px;
+  letter-spacing: 0px;
+  color: #1f7a54;
+  text-transform: uppercase;
+  opacity: 1;
+  margin-top: 5px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+}
+.form-section .password-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.form-section .password-wrapper .password {
+  margin-top: 33px;
+}
+.form-section .password-wrapper .preview {
+  width: 22 px;
+  height: 15 px;
+  margin-top: 40px;
+}
+.form-section .checkbox-wrapper {
+  margin-top: 24px;
+}
+.form-section .checkbox-wrapper .checked-checkbox {
+  width: 18 px;
+  height: 24 px;
+  float: left;
+}
+.form-section .checkbox-wrapper h3 {
+  font-size: 14px;
+  color: #222222;
+  opacity: 1;
+  margin-top: 2px;
+  padding-left: 10px;
+}
+.form-section .login-button {
+  width: 216px;
+  height: 40px;
+  margin: 34px auto 0 auto;
+  border: none;
+  border-radius: 2px;
+  background: #3fd28b 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2392156863);
+  opacity: 1;
+  font-size: 14px;
+  color: #1f2834;
+  font-weight: 600;
+}
+
+* {
+  margin: 0;
+  font-family: "Quicksand", sans-serif;
+}
+
+body {
+  background-color: #eeeeee;
+}
+
+::-moz-placeholder {
+  letter-spacing: 0px;
+  color: #666666;
+  opacity: 1;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+:-ms-input-placeholder {
+  letter-spacing: 0px;
+  color: #666666;
+  opacity: 1;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+::placeholder {
+  letter-spacing: 0px;
+  color: #666666;
+  opacity: 1;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+#header-pattern {
+  background-image: url("../image/header pattern image.png"), url("../image/header pattern svg.svg");
+  width: 100%;
+  height: 47px;
+  border-bottom: 3px solid #31b9e4;
+}
+#header-pattern #logo-in-header {
+  margin-top: 5px;
+  margin-left: 20px;
+  color: white;
+}/*# sourceMappingURL=loginPageStyle.css.map */

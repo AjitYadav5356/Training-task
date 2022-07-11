@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styleSheet/loginPageStyle.css" />
+    <title>Quantum | LogIn</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div style="width: 100vw">
+      <div id="header-pattern">
+        <!-- <img src="/Day4 task/image/header pattern image.png" alt="" id="header-pattern"> -->
+        <img
+          src="./image/logo used in header.svg"
+          alt="Quantum logo image"
+          id="logo-in-header"
+        />
+      </div>
+
+      <form action="" class="form-section">
+        <div>
+          <img src="./image/back.svg" alt="back key" id="back-key" />
+        </div>
+
+        <h2>Log In With Quantum</h2>
+
+        <div class="radio-buttons">
+          <span>
+            <img
+              src="./image/radio-button-on.svg"
+              alt="radio button"
+              id="radio-button"
+              class="checked-radio-button"
+            />
+          </span>
+          <label for="radio-button" id="district">District</label>
+          <img
+            src="./image/radio-button-off.svg"
+            alt="radio button "
+            id="radio button"
+            class="unchecked-radio-button"
+          />
+          <label for="radio button" id="independent">Independent school</label>
+        </div>
+
+        <div class="state">
+          <label for="states" class="state-label">State*</label> <br />
+          <select name="states" id="states">
+            <option value="Alabama">Alabama</option>
+            <option value="Mumbai">Mumbai</option>
+            <option value="Pune">pune</option>
+            <option value="uttar pradesh">Uttar Pradesh</option>
+          </select>
+        </div>
+
+        <div class="district">
+          <label for="districts" class="state-label">District*</label> <br />
+          <select name="districts" id="district">
+            <option value="Alabama">Alabama School District</option>
+            <option value="Mumbai">Mumbai</option>
+            <option value="Pune">pune</option>
+            <option value="uttar pradesh">Uttar Pradesh</option>
+          </select>
+        </div>
+
+        <input type="text" class="username" placeholder="Username/Email ID*" />
+        <a href="#" class="forget-username">FORGOT USERNAME?</a>
+        <div class="password-wrapper">
+          <input type="text" class="password" placeholder="Password*" />
+          <img
+            src="./image/preview.svg"
+            alt="preview the password"
+            class="preview"
+          />
+        </div>
+        <a href="#" class="forget-password">FORGOT PASSWORD?</a>
+
+        <div class="checkbox-wrapper">
+          <img
+            src="./image/checkbox-checked.svg"
+            alt="checkbox"
+            class="checked-checkbox"
+          />
+          <h3>Remember Me</h3>
+        </div>
+        <button type="submit" class="login-button">LOG IN</button>
+      </form>
+
+      <div class="about">
+        <a href="#">About </a>
+        <p>|</p>
+        <a href="#"> Contact Us</a>
+      </div>
+
+      <div class="footer">
+        <img src="./image/logo used in footer.svg" alt="quantum logo" />
+        <p>|</p>
+        <p>Copyright © 2020-2021</p>
+        <p style="font-weight: bold">Zeus Systems Pvt. Ltd.</p>
+        <p>All rights reserved.</p>
+      </div>
+    </div>
+  </body>
+</html>

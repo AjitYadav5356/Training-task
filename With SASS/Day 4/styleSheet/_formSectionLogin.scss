@@ -1,0 +1,176 @@
+@mixin center {
+    margin: 0 auto;
+  }
+  @mixin widthHeight($width, $height) {
+    width: $width px;
+    height: $height px;
+  }
+  @mixin stateInfo {
+    & .state-label {
+      height: 15px;
+      text-align: left;
+      letter-spacing: 0px;
+      color: #666666;
+      opacity: 1;
+      font-size: 12px;
+      border: none;
+    }
+    #states,
+    #district {
+      margin-top: 5px;
+      border: none;
+      border-bottom: 1px solid #eeeeee;
+      height: 25px;
+      width: 100%;
+      text-align: left;
+      font: normal normal medium 16px/20px Quicksand;
+      letter-spacing: 0px;
+      color: #222222;
+      opacity: 1;
+      font-size: 16px;
+      font-weight: 600;
+    }
+  }
+  
+  .form-section {
+    @include center();
+    display: flex;
+    flex-direction: column;
+    margin-top: 61px;
+    max-width: 488px;
+    height: 550px;
+    border-top: 4px solid #31b9e4;
+    background-color: #ffffff;
+    padding: 20px 32px;
+  
+    #back-key {
+      @include widthHeight(17, 26);
+      text-align: left;
+      opacity: 1;
+    }
+    h2 {
+      @include center();
+      @include widthHeight(336, 30);
+      text-align: center;
+      letter-spacing: 0px;
+      color: #222222;
+      opacity: 1;
+      margin-top: -34px;
+      font-weight: 600;
+    }
+    .radio-buttons {
+      display: flex;
+      height: 24px;
+      margin-top: 34px;
+  
+      .checked-radio-button {
+        @include widthHeight(20, 24);
+        text-align: left;
+        letter-spacing: 0px;
+        color: #1f7a54;
+        opacity: 1;
+        margin-right: 8px;
+      }
+      #district {
+        @include widthHeight(53, 20);
+        font-size: 16px;
+        font-weight: 600;
+        margin-top: 2px;
+        text-align: left;
+        letter-spacing: 0px;
+        color: #333333;
+        opacity: 1;
+      }
+      .unchecked-radio-button {
+        @include widthHeight(24, 24);
+        text-align: left;
+        letter-spacing: 0px;
+        color: #1f7a54;
+        opacity: 1;
+        margin: 0 8px 0 51px;
+      }
+  
+      #independent {
+        margin-top: 2px;
+        font: normal normal medium 16px/20px Quicksand;
+        letter-spacing: 0px;
+        color: #333333;
+        opacity: 1;
+        font-weight: 600;
+      }
+    }
+  
+    .state {
+      @include stateInfo;
+      height: 45px;
+      margin-top: 25px;
+    }
+  
+    .district {
+      @include stateInfo();
+      height: 45px;
+      margin-top: 36px;
+    }
+  
+    .username,
+    .password {
+      width: 100%;
+      height: 25px;
+      margin-top: 56px;
+      border: none;
+      border-bottom: 1px solid #eeeeee;
+    }
+    .forget-username,
+    .forget-password {
+      text-align: right;
+      height: 18px;
+      letter-spacing: 0px;
+      color: #1f7a54;
+      text-transform: uppercase;
+      opacity: 1;
+      margin-top: 5px;
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: 600;
+    }
+  
+    .password-wrapper {
+      display: flex;
+      justify-content: space-between;
+      .password {
+        margin-top: 33px;
+      }
+      .preview {
+        @include widthHeight(22, 15);
+        margin-top: 40px;
+      }
+    }
+    .checkbox-wrapper {
+      margin-top: 24px;
+      .checked-checkbox {
+        @include widthHeight(18, 24);
+        float: left;
+      }
+      h3 {
+        font-size: 14px;
+        color: #222222;
+        opacity: 1;
+        margin-top: 2px;
+        padding-left: 10px;
+      }
+    }
+    .login-button {
+      width: 216px;
+      height: 40px;
+      margin: 34px auto 0 auto;
+      border: none;
+      border-radius: 2px;
+      background: #3fd28b 0% 0% no-repeat padding-box;
+      box-shadow: 0px 3px 5px #0000003d;
+      opacity: 1;
+      font-size: 14px;
+      color: #1f2834;
+      font-weight: 600;
+    }
+  }
+  
