@@ -10,13 +10,13 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
-<body>
-
+<body >
+<!-- 
     <nav class="navbar">
         <img class="logo-header" src="./image/logo used in header.svg" alt="logo-header">
       
         <div class="nav-content">
-            <ul class="nav-menu">
+             <ul class="nav-menu">
                 <li class="nav-item"><a class="nav-link" href="#"> Dashboard </a></li>
                 <li class="nav-item" ><a class="nav-link" href="#">Content</a></li>
                 <li class="nav-item" ><a class="nav-link" href="#">User</a></li>
@@ -24,10 +24,18 @@
             </ul>
             <div style="display: flex; align-items:center;">
                 <ul class="icon-in-header">
-                <li><a href="#"><img src="./image/alerts.svg" alt="alerts">
+                <li><a href="#"><img src="./image/alerts.svg" alt="alerts" id="alertIcon">
                     <span class="badge">2</span></a></li>
-                 <li><a href="#"> <img src="./image/announcements.svg" alt="announcements">
-                    <span class="badge">1</span></a></li>
+                 <li><a href="#"> <img src="./image/announcements.svg" alt="announcements" > 
+                    <span class="badge">1</span></a>
+                    <div class="announcement-container">
+                        <div class="announcement-content-container">
+                            <div class="sticky">
+                                <div>SHOW ALL</div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
                   <li> <img class="profile-pic" src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg" alt="profile-img"> 
                     <span class="teacher-badge">T</span>
                 </li>
@@ -38,11 +46,139 @@
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
+                <div class="hamburger-dropdown">
+                    <div class="hamburger-dropdown-menu">
+                        <ul>
+                            <li> <a href="#">DASHBOARD</a> </li>
+                            <li> 
+                                <a href="#">CONTENT</a>
+                                <span>^</span>
+                                <ul>
+                                    <li><a href="#">COURSE CATALOG</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">USERS</a>
+                                <span>^</span>
+                            </li>
+                            <li>
+                                <a href="#">REPORTS</a>
+                                <span>^</span>
+                            </li>
+                            <li>
+                                <a href="#">ADMIN</a>
+                                <span>^</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
 
-    </nav>
+    </nav> -->
+    <header aria-label="Header">
+        <img src="./image/logo used in header.svg" id="logo" alt="Quantum Logo">
+        
+        <ul class="options" style="background: none; outline: none; border: none;" role="menubar">
+            <li class="white-hover small-screen-disable" role="menuitem">
+                <a href="#">DASHBOARD</a>
+            </li>
+            <li class="white-hover small-screen-disable" role="menuitem">
+                <a href="#">CONTENT</a>
+            </li>
+            <li class="white-hover small-screen-disable" role="menuitem">
+                <a href="#">USERS</a>
+            </li>
+            <li class="white-hover small-screen-disable" role="menuitem">
+                <a href="#">REPORTS</a>
+            </li>
+            <li class="white-hover small-screen-disable" role="menuitem">
+                <a href="#">ADMIN</a>
+            </li>
+            <li class="white-hover bell-option announcement-noti" role="menuitem">
+                <a href="#">
+                    <img src="./image/alerts.svg" alt="alert button" class="bell-svg">
+                </a>
+                <div class="announcement--container">
+                    <div class="announcement-content-container"></div>
+                    <div class="sticky">
+                        <div>SHOW ALL</div>
+                    </div>
+                </div>
+                <span class="notification announce-noti"></span>
+            </li>
+            <li class="white-hover announcement-noti speaker-option" role="menuitem">
+                <a href="#">
+                    <img src="./image/announcements.svg" alt="announcement button" class="microphone">
+                </a>
+                <div class="announcement--container">
+                    <div class="announcement-content-container"></div>
+                    <div class="sticky">
+                        <div>SHOW ALL</div>
+                    </div>
+                </div>
+                <span class="notification announce-noti"></span>
+            </li>
+            <li class="white-hover" role="menuitem">
+                <a href="#">
+                    <img src="./image/user-solid.svg" alt="user profile" id="user-dp">
+                </a>
+                <span class="notification-prof">T</span>
 
+            </li>
+            <li class="hamburger-menu" role="menuitem">
+                <button class="remove-styles" id="btn-menu">
+                    <img src="./image/hamburger-menu.svg" alt="side menu button">
+                </button>
+                <div class = "mobile-menu">
+                    <div id="ham-dropdown" class="menu-hamburger">
+                        <ul class="remove-styles">
+                            <li>
+                                <div class="opt">
+                                    <a href = "#">DASHBOARD</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="opt">
+                                    <a href = "#">CONTENT</a>
+                                    <img src="./image/angle-down-solid.svg" alt="expand_more" class="expand-more">
+                                    <img src="./image/angle-up-solid.svg" alt="expand_less" class="expand-less hide-it">
+                                </div>
+                                <div class="hidden-content">
+                                    <p>
+                                        COURSE CATALOG
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="opt">
+                                    <a href = "#">USERS</a>
+                                    <img src="./icons/expand_more.svg" alt="expand_more" class="expand-more">
+                                    <img src="./icons/expand_less.svg" alt="expand_less" class="expand-less hide-it">
+                                </div>
+                            </li>
+                            <li>
+                                <div class="opt">
+                                    <a href = "#">REPORTS</a>
+                                    <img src="./icons/expand_more.svg" alt="expand_more" class="expand-more">
+                                    <img src="./icons/expand_less.svg" alt="expand_less" class="expand-less hide-it">
+                                </div>
+                            </li>
+                            <li>
+                                <div class="opt">
+                                    <a href = "#">ADMIN</a>
+                                    <img src="./icons/expand_more.svg" alt="expand_more" class="expand-more">
+                                    <img src="./icons/expand_less.svg" alt="expand_less" class="expand-less hide-it">
+                                </div> 
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </li>             
+        </ul>
+
+
+    </header>
     <div>
     <div class="course">
         <div class="course-section">
@@ -70,7 +206,7 @@
         </div>
     </div>
 
-    <div class="course-list">
+    <div class="course-list" id="courseList">
         <div class="course1">
             <div class="course-details">
             <img src="./image/imageMask-1.svg" alt="course1 image">
@@ -203,10 +339,10 @@
       </div>
 </div>
 
-<script>
+<!-- <script>
     const navLink = document.querySelectorAll(".nav-link");
 
-navLink.forEach(n => n.addEventListener("click", closeMenu));
+ navLink.forEach(n => n.addEventListener('click', closeMenu));
 
 function closeMenu() {
 hamburger.classList.remove("active");
@@ -216,13 +352,24 @@ navMenu.classList.remove("active");
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
 
-hamburger.addEventListener("click", mobileMenu);
+hamburger.addEventListener('click', mobileMenu);
 
 function mobileMenu() {
 hamburger.classList.toggle("active");
 navMenu.classList.toggle("active");
 }
-</script>
+
+const alertSection = document.querySelector('#body')
+const alertDiv = document.createElement('div');
+alertIcon.addEventListener("click",alert)
+function alert(){
+    alertDiv.textContent = "hello there";
+}
+alertSection.appendChild(alertDiv)
+
+</script> -->
+<script src="./alert-announcement.js"></script>
+<script src="./dropdown.js"></script>
 
 </body>
 </html> 

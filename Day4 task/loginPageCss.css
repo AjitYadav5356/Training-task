@@ -216,11 +216,13 @@ h2 {
 }
 
 .checked-checkbox {
-  width: 18px;
+  margin-right: 10px;
   height: 24px;
   float: left;
 }
-
+input[type="checkbox"]{
+  background-color: #1F7A54;
+}
 h3 {
   font-size: 14px;
   color: #222222;
