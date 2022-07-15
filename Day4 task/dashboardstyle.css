@@ -210,11 +210,14 @@ opacity: 1;
 }
 
 .course-list {
-  display: grid;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  /* display: grid;
   justify-content: center;
   margin: 16px 24px 32px 24px;
   grid-template-columns: 476px 24px 476px;
-  grid-template-rows: 246px 24px 246px;
+  grid-template-rows: 246px 24px 246px; */
 }
 
 .course1 {
@@ -251,14 +254,14 @@ grid-row: 3/4;
 
 .course-details {
   display: flex;
-  margin: 24px 16px 16px 24px;
+  padding-bottom: 15px;
 }
 
 .course-info {
   margin-left: 16px;
   width: 100%;
 }
-.course-name {
+#course-name {
   display: flex;
   max-width: 300px;
   width: 100%;
@@ -291,7 +294,8 @@ grid-row: 3/4;
   opacity: 1;
 }
 
-.course-date {
+
+#course-date {
   display: flex;
   font-size: 12px;
   margin-top: 8px;
@@ -299,6 +303,7 @@ grid-row: 3/4;
   color: #666666;
   opacity: 1;
 }
+
 
 .all-shortcuts {
   display: flex;
@@ -391,6 +396,71 @@ opacity: 1;
     padding-left: 8px;
     opacity: 1;
   }
+
+  .card_body{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .card_body > div{
+    margin: 12px;
+  }
+
+  
+.card{
+  width: 476px;
+  padding:  24px 4px 4px 24px;
+  background-color: #FFFFFF;
+}
+.card-img{
+  width: 132px;
+  height: 157px;
+  object-fit: cover;
+}
+.upper{
+display: flex;
+padding-bottom: 15px;
+
+}
+.card-content{
+padding-top: 5px;
+padding-left: 20px;
+}
+.card-content p{
+color:#666666 ;
+font-size: 12px;
+}
+.coursesname{
+width: 90%;
+padding: 10px 0px; 
+margin-top: 3px;
+ border: none; 
+border-bottom: 2px solid rgba(0, 0, 0, 0.173);
+
+}
+.card-content p span{
+font-weight: 700;
+color: black;
+}
+.acc{
+  display: flex;
+  justify-content: space-between;
+}
+.card-footer{
+margin-top: 10px;
+display: flex;
+padding: 6px 0px;
+justify-content: space-around;
+align-items: center;
+}
+.card-footer > img{
+ padding-left: 48px;
+ padding-right: 53px;
+}
+
+Carddata :nth-child(2) #course-date p{
+  display: none;
+}
 
   @media screen  and (max-width:935px){
     .course-list{
