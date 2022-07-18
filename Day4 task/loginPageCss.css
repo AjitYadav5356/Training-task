@@ -13,11 +13,11 @@ body {
   font-weight: 500;
 }
 
-input[type='radio']:after {
+input[type="radio"]:after {
   width: 20px;
   height: 20px;
   background-color: white;
-  border: 2px solid #1F7A54;
+  border: 2px solid #1f7a54;
 }
 
 #header-pattern {
@@ -85,7 +85,6 @@ h2 {
   opacity: 1;
   margin-right: 8px;
 }
-
 
 .checked-radio-button :checked {
   width: 20px;
@@ -220,8 +219,8 @@ h2 {
   height: 24px;
   float: left;
 }
-input[type="checkbox"]{
-  background-color: #1F7A54;
+input[type="checkbox"] {
+  background-color: #1f7a54;
 }
 h3 {
   font-size: 14px;

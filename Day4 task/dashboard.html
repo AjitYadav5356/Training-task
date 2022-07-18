@@ -1,333 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quantum | Dashboard</title>
-    <link rel="stylesheet" href="./dashboardstyle.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-</head>
-<body >
-<!-- 
+    <link rel="stylesheet" href="./dashboardstyle.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <nav class="navbar">
-        <img class="logo-header" src="./image/logo used in header.svg" alt="logo-header">
-      
-        <div class="nav-content">
-             <ul class="nav-menu">
-                <li class="nav-item"><a class="nav-link" href="#"> Dashboard </a></li>
-                <li class="nav-item" ><a class="nav-link" href="#">Content</a></li>
-                <li class="nav-item" ><a class="nav-link" href="#">User</a></li>
-                <li class="nav-item" ><a class="nav-link" href="#">Reports</a></li>
-            </ul>
-            <div style="display: flex; align-items:center;">
-                <ul class="icon-in-header">
-                <li><a href="#"><img src="./image/alerts.svg" alt="alerts" id="alertIcon">
-                    <span class="badge">2</span></a></li>
-                 <li><a href="#"> <img src="./image/announcements.svg" alt="announcements" > 
-                    <span class="badge">1</span></a>
-                    <div class="announcement-container">
-                        <div class="announcement-content-container">
-                            <div class="sticky">
-                                <div>SHOW ALL</div>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-                  <li> <img class="profile-pic" src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg" alt="profile-img"> 
-                    <span class="teacher-badge">T</span>
-                </li>
-                </ul>    
-           </div>
+      <img
+        class="logo-header"
+        src="./image/logo used in header.svg"
+        alt="logo-header"
+      />
 
-            <div class="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <div class="hamburger-dropdown">
-                    <div class="hamburger-dropdown-menu">
-                        <ul>
-                            <li> <a href="#">DASHBOARD</a> </li>
-                            <li> 
-                                <a href="#">CONTENT</a>
-                                <span>^</span>
-                                <ul>
-                                    <li><a href="#">COURSE CATALOG</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="#">USERS</a>
-                                <span>^</span>
-                            </li>
-                            <li>
-                                <a href="#">REPORTS</a>
-                                <span>^</span>
-                            </li>
-                            <li>
-                                <a href="#">ADMIN</a>
-                                <span>^</span>
-                            </li>
-                        </ul>
-                    </div>
+      <div class="nav-content">
+        <ul class="nav-menu">
+          <li class="nav-item"><a class="nav-link" href="#"> DASHBOARD </a></li>
+          <li class="nav-item"><a class="nav-link" href="#">CONTENT</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">USER</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">REPORT</a></li>
+        </ul>
+        <div style="display: flex; align-items: center">
+          <ul class="icon-in-header">
+            <li id="noticeIcon">
+              <a href="#"
+                ><img src="./image/alerts.svg" alt="alerts" id="alertIcon" />
+                <span class="badge">2</span></a
+              >
+              <div id="main-notice-container">
+                <div class="notice-container"></div>
+                <button class="buttonInNotification">SHOW ALL</button>
+              </div>
+            </li>
+            <li id="announcementIcon">
+              <a href="#">
+                <img
+                  src="./image/announcements.svg"
+                  alt="announcements"
+                  id="anctIcon"
+                />
+                <span class="badge">1</span></a
+              >
+              <div id="main-announcement-container">
+                <div class="announcement-container"></div>
+                <div class="buttonInAnnoucement">
+                  <button>SHOW ALL</button>
+                  <p class="line">|</p>
+                  <button>CREATE NEW</button>
                 </div>
-            </div>
+              </div>
+            </li>
+            <li>
+              <img
+                class="profile-pic"
+                src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg"
+                alt="profile-img"
+              />
+              <span class="teacher-badge">T</span>
+            </li>
+          </ul>
         </div>
 
-    </nav> -->
-    <header aria-label="Header">
-        <img src="./image/logo used in header.svg" id="logo" alt="Quantum Logo">
-        
-        <ul class="options" style="background: none; outline: none; border: none;" role="menubar">
-            <li class="white-hover small-screen-disable" role="menuitem">
-                <a href="#">DASHBOARD</a>
-            </li>
-            <li class="white-hover small-screen-disable" role="menuitem">
-                <a href="#">CONTENT</a>
-            </li>
-            <li class="white-hover small-screen-disable" role="menuitem">
-                <a href="#">USERS</a>
-            </li>
-            <li class="white-hover small-screen-disable" role="menuitem">
-                <a href="#">REPORTS</a>
-            </li>
-            <li class="white-hover small-screen-disable" role="menuitem">
-                <a href="#">ADMIN</a>
-            </li>
-            <li class="white-hover bell-option announcement-noti" role="menuitem">
-                <a href="#">
-                    <img src="./image/alerts.svg" alt="alert button" class="bell-svg">
-                </a>
-                <div class="announcement--container">
-                    <div class="announcement-content-container"></div>
-                    <div class="sticky">
-                        <div>SHOW ALL</div>
-                    </div>
-                </div>
-                <span class="notification announce-noti"></span>
-            </li>
-            <li class="white-hover announcement-noti speaker-option" role="menuitem">
-                <a href="#">
-                    <img src="./image/announcements.svg" alt="announcement button" class="microphone">
-                </a>
-                <div class="announcement--container">
-                    <div class="announcement-content-container"></div>
-                    <div class="sticky">
-                        <div>SHOW ALL</div>
-                    </div>
-                </div>
-                <span class="notification announce-noti"></span>
-            </li>
-            <li class="white-hover" role="menuitem">
-                <a href="#">
-                    <img src="./image/user-solid.svg" alt="user profile" id="user-dp">
-                </a>
-                <span class="notification-prof">T</span>
+        <div class="hamburger" id="hamburgerIcon">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <div class="hamburger-dropdown" id="hamburger-dropdown">
+            <div class="hamburger-dropdown-menu">
+              <ul>
+                <li><a href="#">DASHBOARD</a></li>
+                <li>
+                  <a href="#">CONTENT</a>
+                  <span>^</span>
+                  <ul>
+                    <li><a href="#">COURSE CATALOG</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">USERS</a>
+                  <span>^</span>
+                </li>
+                <li>
+                  <a href="#">REPORTS</a>
+                  <span>^</span>
+                </li>
+                <li>
+                  <a href="#">ADMIN</a>
+                  <span>^</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
 
-            </li>
-            <li class="hamburger-menu" role="menuitem">
-                <button class="remove-styles" id="btn-menu">
-                    <img src="./image/hamburger-menu.svg" alt="side menu button">
-                </button>
-                <div class = "mobile-menu">
-                    <div id="ham-dropdown" class="menu-hamburger">
-                        <ul class="remove-styles">
-                            <li>
-                                <div class="opt">
-                                    <a href = "#">DASHBOARD</a>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="opt">
-                                    <a href = "#">CONTENT</a>
-                                    <img src="./image/angle-down-solid.svg" alt="expand_more" class="expand-more">
-                                    <img src="./image/angle-up-solid.svg" alt="expand_less" class="expand-less hide-it">
-                                </div>
-                                <div class="hidden-content">
-                                    <p>
-                                        COURSE CATALOG
-                                    </p>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="opt">
-                                    <a href = "#">USERS</a>
-                                    <img src="./icons/expand_more.svg" alt="expand_more" class="expand-more">
-                                    <img src="./icons/expand_less.svg" alt="expand_less" class="expand-less hide-it">
-                                </div>
-                            </li>
-                            <li>
-                                <div class="opt">
-                                    <a href = "#">REPORTS</a>
-                                    <img src="./icons/expand_more.svg" alt="expand_more" class="expand-more">
-                                    <img src="./icons/expand_less.svg" alt="expand_less" class="expand-less hide-it">
-                                </div>
-                            </li>
-                            <li>
-                                <div class="opt">
-                                    <a href = "#">ADMIN</a>
-                                    <img src="./icons/expand_more.svg" alt="expand_more" class="expand-more">
-                                    <img src="./icons/expand_less.svg" alt="expand_less" class="expand-less hide-it">
-                                </div> 
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </li>             
-        </ul>
-
-
-    </header>
+    <div class="anct"></div>
     <div>
-    <div class="course">
+      <div class="course">
         <div class="course-section">
-            <img src="./image/courses.svg" alt="courses" id="course-logo">
-            <p class="course-count">4</p>
-            <p class="course-text">Courses</p>
+          <img src="./image/courses.svg" alt="courses" id="course-logo" />
+          <p class="course-count">4</p>
+          <p class="course-text">Courses</p>
         </div>
         <div class="classes-section">
-            <img src="./image/classes.svg" alt="courses" id="course-logo">
-            <p class="course-count">4</p>
-            <p class="course-text">Classes</p>
+          <img src="./image/classes.svg" alt="courses" id="course-logo" />
+          <p class="course-count">4</p>
+          <p class="course-text">Classes</p>
         </div>
-</div>
-   <div class="course-border"></div>
+      </div>
+      <div class="course-border"></div>
 
-    <div class="sort-section">
+      <div class="sort-section">
         <p>Showing 4 of 4 courses</p>
-        <div style="display: flex;">
-            <p>Sort By:</p>
-            <div class="course-name-sort">
-             <p>Course Name</p>
-            <img src="./image/arrow-down.svg" alt="down arrow">
+        <div style="display: flex">
+          <p>Sort By:</p>
+          <div class="course-name-sort">
+            <p>Course Name</p>
+            <img src="./image/arrow-down.svg" alt="down arrow" />
+          </div>
+          <img src="./image/sort.svg" alt="sort option" />
         </div>
-            <img src="./image/sort.svg" alt="sort option">
-        </div>
-    </div>
-<!-- 
-    <div class="course-list" id="courseList">
-        <div class="course1">
-            <div class="course-details">
-            <img src="./image/imageMask-1.svg" alt="course1 image">
-            <div class="course-info">
-                <div class="course-name">
-                <p>Acceleration </p>
-                <img src="./image/favourite.svg" alt="add to favourite">
-            </div>
-                <p class="course-type">Physics | Grade 7 <b style="color:  #1F7A54;"> +2 </b></p>
-                <p class="course-type"><b style="color: #222222;">4</b>  Units <b style="color: #222222;">18</b>  Lessons <b style="color: #222222;">24</b>Topics</p>
-                <label for="mentor-name"></label>
-                <select name="mentor" id="mentor-name" class="mentor-dropdown-menu">
-                    <option value="Mr. Frank's Class B">Mr. Frank's Class B</option>
-                    <option value="Mr. Frank's Class A">Mr. Frank's Class B</option>
-                    <option value="All Classes">All Classes</option>
-                </select>
-                <div class="course-date">
-                    <p>50 Students</p>
-                    <p class="line">|</p>
-                    <p>21-Jan-2020 - 21-Aug-2020</p>
-                </div>
-            </div>
-        </div>
-            <div class="all-shortcuts">
-                <img src="./image/preview.svg" alt="preview icon" class="preview-icon">
-                <img src="./image/manage course.svg" alt="manage course icon" class="manage-course-icon">
-                <img src="./image/grade submissions.svg" alt="grade submission icon" class="grade-submission-icon">
-                <img src="./image/reports.svg" alt="report icon" class="report-icon">
-            </div>
-        </div>
-        <div class="course2">
-            <div class="course-details">
-                <img src="./image/imageMask-1.png" alt="course2 image">
-                <div class="course-info">
-                    <div class="course-name">
-                    <p style="width: 250px;">Displacement, Velocity and Speed </p>
-                    <img src="./image/favourite.svg" alt="add to favourite">
-                </div>
-                    <p class="course-type">Physics 2 | Grade 6 <b style="color:  #1F7A54;"> +3 </b></p>
-                    <p class="course-type"><b style="color: #222222;">2</b>  Units <b style="color: #222222;">15</b>  Lessons <b style="color: #222222;">20</b>Topics</p>
-                    <label for="mentor-name"></label>
-                    <select name="mentor" id="mentor-name" class="mentor-dropdown-menu">
-                        <option value="no classes" > No Classes</option>
-                        <option value="Mr. Frank's Class B">Mr. Frank's Class B</option>
-                        <option value="Mr. Frank's Class A">Mr. Frank's Class B</option>
-                        <option value="All Classes">All Classes</option>
-                    </select>
-                 
-                </div>
-            </div>
-                <div class="all-shortcuts">
-                    <img src="./image/preview.svg" alt="preview icon" class="preview-icon">
-                    <img src="./image/manage course.svg" alt="manage course icon" class="manage-course-icon" style="opacity: 0.4;">
-                    <img src="./image/grade submissions.svg" alt="grade submission icon" class="grade-submission-icon" style="opacity: 0.4;">
-                    <img src="./image/reports.svg" alt="report icon" class="report-icon">
-                </div>
-        </div>
-        <div class="course3">
-            <div class="course-details">
-                <img src="./image/imageMask-3.png" alt="course3 image">
-                <div class="course-info">
-                    <div class="course-name">
-                    <p style="width: 260px;">Introduction to Biology: Micro organisms and how they affec... </p>
-                    <img src="./image/favourite.svg" alt="add to favourite">
-                </div>
-                    <p class="course-type">Biology | Grade 4 <b style="color:  #1F7A54;"> +1 </b></p>
-                    <p class="course-type"><b style="color: #222222;">5</b>  Units <b style="color: #222222;">16</b>  Lessons <b style="color: #222222;">22</b>Topics</p>
-                    <label for="mentor-name"></label>
-                    <select name="mentor" id="mentor-name" class="mentor-dropdown-menu">
-                        <option value="All Classes">All Classes</option>
-                        <option value="Mr. Frank's Class B">Mr. Frank's Class B</option>
-                        <option value="Mr. Frank's Class A">Mr. Frank's Class B</option>
-                        
-                    </select>
-                    <div class="course-date">
-                        <p>300 Students</p>
-                    </div>
-                </div>
-            </div>
-                <div class="all-shortcuts">
-                    <img src="./image/preview.svg" alt="preview icon" class="preview-icon">
-                    <img src="./image/manage course.svg" alt="manage course icon" class="manage-course-icon" style="opacity: 0.4;">
-                    <img src="./image/grade submissions.svg" alt="grade submission icon" class="grade-submission-icon" style="opacity: 0.4;">
-                    <img src="./image/reports.svg" alt="report icon" class="report-icon">
-                </div>
-        </div>
-        <div class="course4">
-            <p class="expired-tag">EXPIRED</p>
-            <div class="course-details" style="margin-top: -2px;">
-                <img src="./image/imageMask-2.png" alt="course4 image">
-                <div class="course-info">
-                    <div class="course-name">
-                    <p style="width: 260px;">Introduction to High School Mathematics  </p>
-                    <img src="./image/favourite.svg" alt="add to favourite" style="opacity: 0.2;">
-                </div>
-                    <p class="course-type">Mathematics | Grade 8 <b style="color:  #1F7A54;"> +3 </b></p>
-                    <p class="course-type"><b style="color: #222222;">4</b>  Units <b style="color: #222222;">18</b>  Lessons <b style="color: #222222;">24</b>Topics</p>
-                    <label for="mentor-name"></label>
-                    <select name="mentor" id="mentor-name" class="mentor-dropdown-menu">
-                        <option value="Mr. Frank's Class B">Mr. Frank's Class A</option>
-                        <option value="Mr. Frank's Class A">Mr. Frank's Class B</option>
-                        <option value="All Classes">All Classes</option>
-                    </select>
-                    <div class="course-date">
-                        <p>44 Students </p>
-                        <p class="line">|</p>
-                        <p>14-Oct-2019 - 20-Oct-2020</p>
-                    </div>
-                </div>
-            </div>
-                <div class="all-shortcuts">
-                    <img src="./image/preview.svg" alt="preview icon" class="preview-icon">
-                    <img src="./image/manage course.svg" alt="manage course icon" class="manage-course-icon">
-                    <img src="./image/grade submissions.svg" alt="grade submission icon" class="grade-submission-icon">
-                    <img src="./image/reports.svg" alt="report icon" class="report-icon">
-                </div>
-        </div>
-    </div> -->
-    <div class="card_body"></div>
-    <div class="about">
-        <a href="#">About  |</a>
+      </div>
+      <div class="just"></div>
+      <div class="about">
+        <a href="#">About |</a>
         <a href="#"> Contact Us</a>
       </div>
 
@@ -338,39 +143,46 @@
         <p style="font-weight: bold">Zeus Systems Pvt. Ltd.</p>
         <p>All rights reserved.</p>
       </div>
-</div>
+    </div>
 
-<!-- <script>
-    const navLink = document.querySelectorAll(".nav-link");
+    <script>
+      // hamburger
+      const hamburgerSection = document.getElementById("hamburger-dropdown");
+      let ham = document.getElementById("hamburgerIcon");
 
- navLink.forEach(n => n.addEventListener('click', closeMenu));
+      ham.addEventListener("mouseover", (e) => {
+        hamburgerSection.style.display = "block";
+      });
+      document.addEventListener("click", (event) => {
+        hamburgerSection.style.display = "none";
+      });
 
-function closeMenu() {
-hamburger.classList.remove("active");
-navMenu.classList.remove("active");
-}
+      //announcement
+      const anctBlock = document.getElementById("main-announcement-container");
+      let a = document.getElementById("anctIcon");
 
-const hamburger = document.querySelector(".hamburger");
-const navMenu = document.querySelector(".nav-menu");
+      a.addEventListener("mouseover", (e) => {
+        anctBlock.style.display = "block";
+      });
+      document.addEventListener("click", (event) => {
+        anctBlock.style.display = "none";
+      });
 
-hamburger.addEventListener('click', mobileMenu);
+      //alert
+      const x = document.getElementById("main-notice-container");
+      let y = document.getElementById("alertIcon");
 
-function mobileMenu() {
-hamburger.classList.toggle("active");
-navMenu.classList.toggle("active");
-}
-
-<script src="./dashboard.js"></script>
-const alertDiv = document.createElement('div');
-alertIcon.addEventListener("click",alert)
-function alert(){
-    alertDiv.textContent = "hello there";
-}
-alertSection.appendChild(alertDiv)
-
-</script> -->
-<script src="./alert-announcement.js"></script>
-<script src="./dropdown.js"></script>
-
-</body>
-</html> 
+      y.addEventListener("mouseover", (e) => {
+        x.style.display = "block";
+      });
+      document.addEventListener("click", (event) => {
+        x.style.display = "none";
+      });
+    </script>
+    <script src="./dashboard.js"></script>
+    <script src="./alert.js"></script>
+    <!-- <script src="./alertjs.js"></script> -->
+    <script src="./notice.js"></script>
+    <!-- <script src="./notificatioJS.js"></script> -->
+  </body>
+</html>
