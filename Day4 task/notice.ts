@@ -14,7 +14,7 @@ let detail: {
     image: "./image/circle-minus-solid.svg",
     course: "",
     courseName: "",
-    color: "#FFFFEE 0% 0% no-repeat padding-box",
+    color: "#FFFFEE",
   },
   {
     info: "Lesson 3 Practice Worksheet overdue for Amy Santiago",
@@ -22,7 +22,7 @@ let detail: {
     image: "./image/circle-check-solid.svg",
     course: "Course: ",
     courseName: "Advanced Mathematics",
-    color: "#FFFFFF 0% 0% no-repeat padding-box;",
+    color: "#FFFFFF",
   },
   {
     info: "23 new students created",
@@ -30,7 +30,7 @@ let detail: {
     image: "./image/circle-minus-solid.svg",
     course: "",
     courseName: "",
-    color: "#FFFFEE 0% 0% no-repeat padding-box",
+    color: "#FFFFEE",
   },
   {
     info: "15 submissions ready for evaluation",
@@ -38,7 +38,7 @@ let detail: {
     image: "./image/circle-minus-solid.svg",
     course: "Class:",
     courseName: " Basics of Algebra",
-    color: "#FFFFEE 0% 0% no-repeat padding-box",
+    color: "#FFFFEE",
   },
   {
     info: "License for Basic Concepts in Geometry has been assigned to your... school",
@@ -46,7 +46,7 @@ let detail: {
     image: "./image/circle-minus-solid.svg",
     course: "",
     courseName: "",
-    color: "#FFFFEE 0% 0% no-repeat padding-box",
+    color: "#FFFFEE",
   },
 ];
 
@@ -54,6 +54,7 @@ let notices: string = "";
 for (let n of detail) {
   notices += `   
         <div style="background:${n.color};">
+        <div>
         <div class="infoImage">
         <p>${n.info} </p>
         <img src="${n.image}" class="checkImage">
@@ -61,7 +62,9 @@ for (let n of detail) {
         <p> ${n.course} ${n.courseName} </p>
         <p style="text-align:end"> ${n.date} </p>
         </div>
-
+     
+        </div>
+        <hr>
     `;
 }
 

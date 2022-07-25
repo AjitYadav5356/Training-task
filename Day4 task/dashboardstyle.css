@@ -118,12 +118,13 @@ li {
 
 .hamburger-dropdown-menu li {
   width: 100%;
+  font-weight: 500;
   margin-left: 20px;
   color: #1f7a54;
+  opacity: 1;
 }
 .hamburger-dropdown-menu li span {
-  text-align: end;
-  color: #1f7a54;
+  color:#1F7A54;
 }
 .bar {
   display: block;
@@ -223,6 +224,7 @@ li {
   overflow: auto;
   right: 20%;
   top: -46%;
+  box-shadow: 0px 3px 14px #00000029;
 }
 #main-notice-container > div {
   padding: 16px;
