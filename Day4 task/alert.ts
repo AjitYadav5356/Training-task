@@ -28,7 +28,7 @@ let data: {
     date: "15-Sep-2018 at 07:21 pm",
     course: "",
     courseName: "",
-    fileInfo: "2 files are attached",
+    fileInfo: "4 files are attached",
     fileImage: "./image/paperclip-solid.svg",
     image: "./image/circle-minus-solid.svg",
     color: "#FFFFEE",
